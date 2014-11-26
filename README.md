@@ -1,8 +1,8 @@
 4guysandadime
 =============
 
-Advanced Web 498 final project
- This is my change...
+#AAU WNM 498 - Advanced Web 498 Final Project
 
-Hello!
+##Get Offside - Finding which NFL team you should cheer for!
 
+ An interactive personality quiz for finding which NFL team you really should be rooting for.
