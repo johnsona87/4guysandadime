@@ -1,0 +1,53 @@
+
+$gutter-size: 10px;
+$column-length: 12;
+
+// Sass Map, named indexes
+$container-width:(
+	xs:0,
+	sm:480px,
+	md:640px,
+	lg:960px,
+	xl:1200px
+	);
+
+// Sass List, linear array
+$size-shortnames:("xs","sm","md","lg","xl");
+
+
+// map-get($container-width,"xs");
+
+$container-xs-width:map-get($container-width,"xs");
+$container-sm-width:640px;
+$container-md-width:800px;
+$container-lg-width:1000px;
+$container-xl-width:1200px;
+
+$color-red: #e11;
+$color-warning: $color-red;
+$color-yellow: rgb(240,240,40);
+$color-alert: $color-yellow;
+$color-blue: #03c;
+$color-hero: $color-blue;
+$color-green: #00FF00;
+$color-confirm: $color-green;
+
+$color-grey-light:#eee;
+
+
+@mixin make-font-face($font-name,$font-src,$font-format:'ttf') {
+	@font-face {
+	  font-family: $font-name;
+	  src: url(#{$font-src}) format(#{$font-format});
+	}
+}
+
+@function gradient-named-darken($percentage){
+	@return repeating-linear-gradient(
+		45deg,
+		darken(#e6f728,percentage($percentage)),
+		darken(#f7d428,percentage($percentage)) 10px,
+		darken(#effa73,percentage($percentage)) 10px,
+		darken(#effa73,percentage($percentage)) 20px
+		);
+}

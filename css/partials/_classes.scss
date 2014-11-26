@@ -1,0 +1,66 @@
+@mixin center-in-parent {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* .container {
+	width: $container-xl-width;
+	@include center-in-parent;
+} */
+
+
+.compact {
+	list-style-type:none;
+	margin-top:0;
+	margin-bottom:0;
+	padding-left:0;
+}
+.clearfix:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+
+
+
+
+
+.nav {
+	& > ul {
+		@extend .compact;
+	}
+	a {
+		display:block;
+		background-color:transparent;
+		color:$color-hero;
+	}
+	a:hover, .active a {
+		color:white;
+		text-decoration:none;
+	}
+	a:hover {
+		background-color: lighten($color-hero, 20%);
+	}
+	.active a {
+		background-color: $color-hero;
+	}
+}
+
+.btn {
+	background-color:gradient-named-darken(.3);
+	border-radius:5px;
+	border:0;
+	outline:0;
+	position:relative;
+
+	&-sm {
+		font-size:.8em;
+	}
+	&:hover {
+		background-color:darken($color-grey-light,20%);
+	}
+	&:active {
+		top:2px;
+	}
+}
