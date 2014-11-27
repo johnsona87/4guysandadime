@@ -1,0 +1,19 @@
+.cover {
+	//background: url('../img/woodbgb.jpg') no-repeat center center fixed;
+	background-size: cover;
+	background-color: rgba(3, 48, 45, 1);
+	width: 100%;
+	height: auto;
+	padding-top: 5em;
+	text-align: center;
+}
+.answer-group{
+	padding-top: 3em;
+	padding-bottom: 2em;
+}
+.answer {
+	background-color: rgba(150, 150, 150, .8);
+	display: inline-block;
+	height: 50vh;
+	padding-top: 5em;
+}
