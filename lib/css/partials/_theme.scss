@@ -1,7 +1,7 @@
+
 .cover {
-	//background: url('../img/woodbgb.jpg') no-repeat center center fixed;
 	background-size: cover;
-	background-color: rgba(3, 48, 45, 1);
+	background-color: #003366;
 	width: 100%;
 	height: auto;
 	padding-top: 5em;
@@ -9,11 +9,121 @@
 }
 .answer-group{
 	padding-top: 3em;
-	padding-bottom: 2em;
+	padding-bottom: 0em;
 }
 .answer {
-	background-color: rgba(150, 150, 150, .8);
+	
 	display: inline-block;
-	height: 50vh;
+	height: 30vh;
 	padding-top: 5em;
+}
+
+.bar-1 {
+	width:100%; 
+	height:5px;
+	position:fixed;
+   	top:0;
+   	left:0;
+}
+
+.bar-2 {
+	width:100%; 
+	height:5px;
+	position:fixed;
+   	bottom:0;
+   	left:0;
+}
+
+h1 {
+	font-family: 'Graduate', cursive;
+	color: #fff9f9;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 50px;
+	line-height: 55px;
+}
+
+.intro {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff9f9;
+	font-weight: 300;
+	font-size: 14px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+}
+
+.stars {
+	width: 17px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 80px;
+}
+
+.start-button {
+	background-image:url(../../lib/assets/ball.png);
+	background-color: rgba(1,1,1,0);
+    cursor:pointer;
+    border-style: none;
+    width:121px;
+    height:74px;
+
+  	font-family: 'Graduate', cursive;
+	color: #fff9f9;
+	font-size: 20px;
+}
+
+.start-button a:link, .start-button a:visited {
+		text-decoration: none;
+		color: #fff9f9;
+}
+
+.start-button a:hover {
+		text-decoration: none;
+		color: #4f5b8b;
+}
+
+.button-blue {
+	width: 130px;
+	background-color: rgba(0,0,0,0);
+	border-style: none;
+    border-top: solid #4f5b8b;
+   	padding: 15px;
+
+	font-family: 'Graduate', cursive;
+	color: #fff9f9;
+	font-size: 20px;
+}
+
+.button-blue a:link, .button-white a:visited {
+		text-decoration: none;
+		color: #fff9f9;
+}
+
+.button-blue a:hover {;
+		text-decoration: none;
+		color: #4f5b8b;
+}
+
+.button-red {
+	width: 130px;
+	background-color: rgba(0,0,0,0);
+	border-style: none;
+    border-top: solid #a45656;
+   	padding: 15px;
+
+	font-family: 'Graduate', cursive;
+	color: #fff9f9;
+	font-size: 20px;
+}
+
+.button-red a:link, .button-white a:visited {
+		text-decoration: none;
+		color: #fff9f9;
+}
+
+.button-red a:hover {;
+		text-decoration: none;
+		color: #a45656;
 }
